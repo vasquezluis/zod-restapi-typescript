@@ -1,0 +1,21 @@
+# Iniciar package
+npm init -y
+
+# instalar modulos principales
+npm i express zod 
+
+# instalar modulos de typescript (si no estan instalados)
+npm i typescript ts-node-dev -D
+
+# instalar tipos de datos de express
+npm i @types/express -D
+
+# crear script dev en package.json
+"dev": "ts-node-dev --respawn index.ts"
+
+# crear archivo de configuracion typescript
+npx tsc --init
+
+# configuracion tsconfig.json
+"rootDir": "./src"
+"outDir": "./dist"
